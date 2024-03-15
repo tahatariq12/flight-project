@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            overflow-x: hidden !important;
+            font-style: normal !important;
+            text-decoration: none !important;
+        }
+
+        .audx {
+            font-family: serif;
+            margin-top: 10px;
+        }
+
+        .menu {
+            width: 25px;
+            height: 25px;
+            margin-right: 30px;
+        }
+
+        .better {
+            height: 600px;
+
+            font-family: serif;
+            padding-top: 242px;
+            color: white;
+        }
+
+        .contact {
+            width: 150px;
+            border-radius: 25px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+
+        .container2 {
+            background: #231F20;
+            height: auto;
+            padding-top: 50px;
+            font-family: serif;
+        }
+
+        .text {
+            text-align: initial;
+            color: aliceblue;
+            width: 100%;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .services {
+            color: #81DCD0;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        .container3 {
+            padding-top: 30px;
+        }
+
+        .img {
+            width: 89%;
+            height: auto;
+        }
+
+        .container4 {
+            font-family: serif;
+        }
+
+        .color {
+            color: #928b8d;
+        }
+
+
+        .Projects {
+            text-decoration: none;
+        }
+
+        .logo {
+            font-family: serif;
+            height: auto;
+        }
+
+        .logo2 {
+            padding: 90px;
+        }
+
+        .container5 {
+            font-family: serif;
+            margin-top: 30px;
+            margin-left: 4%;
+        }
+
+        .email1 {
+            background: rgba(39, 110, 255, 0.2);
+            height: auto;
+            padding-top: 10px;
+        }
+
+        .email2 {
+            width: 65%;
+            height: 30px;
+            margin-left: 4%;
+            margin-top: 20px;
+            border: none;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .message_textarea {
+            width: 65%;
+            height: 181px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: none;
+            margin-top: 30px;
+            margin-left: 4%;
+            background-color: white;
+        }
+
+        .contact-btn {
+            width: 25%;
+            height: 45px;
+            background-color: black;
+            border-radius: 100px;
+            color: white;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .General {
+            font-family: serif;
+            line-height: 40px;
+
+        }
+
+
+        .container6 {
+            margin-left: -2%;
+            padding-top: 10%;
+            margin-top: 30px;
+        }
+
+        .links {
+            text-decoration: none;
+            color: #81DCD0;
+            padding-right: 40px;
+        }
+
+        .list {
+            list-style: none;
+            padding-left: 40px;
+        }
+
+        .list2 {
+            list-style: none;
+            padding-left: 40px;
+        }
+
+        .links2 {
+            color: #cccccc73;
+            margin-right: 40px;
+            padding: 2px;
+        }
+
+        .footer {
+            color: white;
+            background: #000;
+        }
+
+        .footer1 {
+            font-family: serif;
+            padding-left: 40px;
+            line-height: 40px;
+        }
+
+        @media only screen and (max-width: 950px) {
+            .contact-btn {
+                width: 25%;
+            }
+
+            .email2 {
+                width: 100%;
+
+            }
+
+            .message_textarea {
+                width: 100%;
+            }
+
+            .container6 {
+                text-align: center;
+            }
+
+            .helped {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 60px;
+                color: #231F20;
+            }
+        }
+
+        @media only screen and (max-width: 950px) {
+            .contact-btn {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 482px) {
+            .list {
+                flex-direction: column;
+            }
+
+            .list2 {
+                flex-direction: column;
+            }
+
+            .links2 {
+                margin: 1%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid">
+            <h2 class=" text-white audx"><img src="menu.png" class="menu">AUDX</h2>
+
+
+            <form class="d-flex" role="search">
+                <button class="btn bg-dark text-white contact" type="submit">CONTACT ME</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+    <div class="container-fluid text-center bg-primary text-white better">
+        <h1>Better experiences <br> mean better business.</h1>
+    </div>
+
+    <div class="container-fluid text-white container2">
+        <div class="container">
+            <div class="row py-5 px-2">
+                <div class="col-lg-6 col-sm-12">
+
+                    <div class="text">
+                        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat eveniet,
+                            consectetur laborum repellendus autem placeat blanditiis ipsum dolorem molestiae!</h3>
+
+                    </div>
+                    <br><br><br><br>
+                    <div class="text-start">
+                        <h4>
+                            <a class="services" href="">See All Services</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-6 container3">
+                    <div class="text-start  ">
+                        <h4>
+                            <a class="services" href="#">Customer Experience</a>
+                        </h4>
+                        <div>
+                            <p class="my-2">Lorem ipsum dolor ipsum? Vel voluptatum porro harum? Vel voluptatum porro
+                                harum?</p>
+
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <div class="text-start  ">
+                        <h4>
+                            <a class="services" href="#">Technical Experience</a>
+                        </h4>
+                        <div class="services_info  tech ">
+                            <p class="my-2">Lorem ipsum dolor ipsum? Vel voluptatum porro harum?Vel voluptatum porro
+                                harum?</p>
+
+                        </div>
+                        <br><br><br>
+                    </div>
+                    <div class="text-start">
+                        <h4>
+                            <a class="services" href="#">Market Experience</a>
+                        </h4>
+                        <div class="services_info  ">
+                            <p class="my-2">Lorem ipsum dolor ipsum? Vel voluptatum porro harum? Vel voluptatum porro
+                                harum?</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mb-5 container4">
+
+        <h1 class="my-5">Extensive Portfolio Projects</h1>
+        <div>
+            <div class="row">
+
+                <div class="col-lg-6 col-sm-12 text-sm-center text-lg-center p-3">
+                    <img src="laptop.jpg" class="img" alt="...">
+                    <div class="card-body">
+                        <br>
+                        <div class="text-center">
+                            <p class="color">Technology / Cloud Security</p>
+                            <h4>nCall - Incident Management Tool</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 text-sm-center text-lg-start p-3">
+                    <img src="laptop.jpg" class="img" alt="...">
+                    <div class="card-body">
+                        <br>
+                        <div>
+                            <p class="color">Technology / Cloud Security</p>
+                            <h4>nCall - Incident Management Tool</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 text-sm-center text-lg-center p-3">
+                    <img src="laptop.jpg" class="img" alt="...">
+                    <div class="card-body">
+                        <br>
+                        <div class="text-center">
+                            <p class="color">Technology / Cloud Security</p>
+                            <h4>nCall - Incident Management Tool</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-sm-12 text-sm-center text-lg-start p-3">
+                    <img src="laptop.jpg" class="img" alt="...">
+                    <div class="card-body">
+                        <br>
+                        <div>
+                            <p class="color">Technology / Cloud Security</p>
+                            <h4>nCall - Incident Management Tool</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container text-sm-center allproject">
+        <h4> <a class="Projects" href="">See All Projects</a></h4>
+    </div>
+
+    <div class="container my-5 logo">
+        <h1 class="helped">I helped Fastest growing startups and Companies</h1>
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo.jpg" class="img-fluid d-block m-auto pt-3" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo2.jpg" class="img-fluid d-block m-auto pt-4" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo3.jpg" class="img-fluid d-block m-auto" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo4.jpg" class="img-fluid d-block m-auto pt-6" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo5.jpg" class="img-fluid d-block m-auto pt-2" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="logo2">
+                    <img src="logo6.jpg" class="img-fluid d-block m-auto pt-3" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid email1 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="mt-4">
+                        <h3 class="container5"><b>Got a project to discuss ? Drop me a line.</b></h3><br><br>
+                        <div class="mb-3">
+
+                            <input type="email" class="form-control email2" id="exampleFormControlInput1"
+                                placeholder="write your email here">
+                        </div>
+                        <div class="mb-3">
+
+                            <textarea id="usermassage" class="message_textarea"
+                                placeholder="write your massage here"></textarea>
+                            <br>
+                            <button type="submit" class="contact-btn">SEND MASSAGE</button>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 text-sm-center text-lg-start container6">
+                    <h4 class="General"><b>For General inquiries,<br>reach me out</b></h4><br>
+                    <div class="Contact-info">
+
+                        <a>cwahab672@gmail.com</a>
+                        <br><br>
+                        <a>abdulwahabfarooq.44</a>
+                        <br><br>
+                        <a>upwork ID</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="footer1">
+                        <h2 class="mt-5">AUXD</h2>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+                            animi sed dolore facere eum.!</p>
+                    </div>
+
+                    <div>
+                        <h5>
+                            <ul class="list mt-5 d-flex">
+
+                                <li><a class="links" href="#">Services</a></li>
+                                <li><a class="links" href="#">About</a></li>
+                                <li><a class="links" href="#">Projects</a></li>
+                                <li><a class="links" href="#">Contact</a></li>
+
+                            </ul>
+                        </h5>
+
+                        <ul class="list2 d-flex mt-5">
+                            <li><svg class="links2" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                    viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg></li>
+                            <li><svg class="links2" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                    viewBox="0 0 448 512">
+                                    <path fill="currentColor"
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg></li>
+                            <li><svg class="links2 mt-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+                                    viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076l.008-.042c.207-1.143.849-3.06 2.839-3.06a2.705 2.705 0 0 1 2.703 2.703a2.707 2.707 0 0 1-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366c-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112a2.551 2.551 0 0 1-2.547 2.548a2.55 2.55 0 0 1-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303c2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109c3 0 5.439-2.452 5.439-5.45c0-3-2.439-5.439-5.439-5.439z">
+                                    </path>
+                                </svg></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

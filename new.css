@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(50, 115, 255);
+}
+.navbar{
+    width: 82%;
+    margin: auto;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: #fff;
+    font-size: 25px;
+    width: 120px;
+    cursor: pointer;
+}
+.link8{
+    margin-left: -60%;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.join{
+    background-color:rgb(7, 168, 231);
+    border-radius: 5px;
+    padding: 10px;
+}
+.content{
+    width: 82%;
+    margin: auto;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.text{
+    font-size: small;
+    font-weight: 700;
+    color:rgb(38, 178, 233) ;
+}
+.depth{
+    margin-top: 3%; 
+    line-height: 120%;
+} 
+h1{
+    font-size: 50px;
+}
+
+.text1{
+    margin-top: 2%;
+    line-height: 150%;
+    font-weight: 700;
+}
+#grid{
+    margin-top: 3%;
+    list-style: none;
+}
+#grid li{
+    display: inline-block;
+    padding: 10px 15px;
+    border:2px solid rgb(7, 168, 231);
+    border-radius: 5px;
+}
+.Quote{
+    background-color: rgb(7, 168, 231);
+}
+#grid li a{
+    text-decoration: none;
+}
+.learn{
+    color: rgb(7, 168, 231);
+}
+.more{
+    margin-left: 1%;
+}
+.pic img{
+    height: 375px;
+    width: 500px;
+    margin-top: -8%;
+    margin-left: 30%;
+}
+.col{
+    width: 82%;
+    margin: auto;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.col1{
+    height: 210px;
+    width: 250px;
+    background-color: #fff;
+}
+.col1 img{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+}
+.train{
+    color: black;
+    width: 85%;
+    margin: auto;
+}
+.one{
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+span{
+    border: 1px solid red;
+    border-collapse: collapse;
+    display: block;
+    width: 20%;
+    margin-left: 8%; 
+    margin-bottom: 15px;
+}
+.text3{
+    width: 85%;
+    margin: auto;
+}
+.two{
+   margin-left: 20%;
+}
+.three{
+    margin-left: 30%;
+}

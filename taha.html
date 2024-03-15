@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="taha.css">
+    <link rel="shortcut icon" href="booktripslogo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-navbar h-navbar-resp">
+        <div class="navbar ">
+            <div><img class="logo" src="booktripslogo.jpeg" alt=""></div>
+            <ul class="navlist">
+                <li class="nav-items" class="clickable" onclick="addBorder(this)"><a href="#">Home</a></li>
+                <li class="nav-items"><a href="#">Destination</a></li>
+                <li class="nav-items"><a href="#">Airline</a></li>
+                <li class="nav-items"><a href="#">Fares</a></li>
+                <li class="nav-items"><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="navbar-btn"></div>
+            <div class="navbar-btn"></div>
+            <div class="navbar-btn"></div>
+        </div>
+    </div>
+
+    <div class="planemap">
+        <div class="container">
+            <div class="form-group">
+                <div class="form-checkbox">
+                    <label for="roundtrip" id="toggle-on"><input type="radio" id="roundtrip" name="flight-type">
+                        <span></span>
+                        Round Trip
+                    </label>
+                    <label for="one-way" id="toggle-off"><input type="radio" id="one-way" name="flight-type">
+                        <span></span>
+                        <span>One Way</span>
+                    </label>
+                </div>
+            </div>
+            <div class="booking-area">
+                <div>
+                    <div class="form-group Departure-Arrival">
+                        <span class="form-label">Departure</span>
+                        <div>
+                            <div class="select-area">
+                                <div class="">
+                                    <input aria-invalid="false" autocomplete="off" id=":r4:" type="text"
+                                        class="css-1uvydh2" aria-autocomplete="list" aria-expanded="false"
+                                        autocapitalize="none" spellcheck="false" role="combobox" value="">
+                                </div>
+                                <div class="select-area-btn">
+                                    <button class="css-uge3vf" tabindex="-1" type="button" aria-label="Open"
+                                        title="Open">
+                                        <svg class="css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="ArrowDropDownIcon">
+                                            <path d="M7 10l5 5 5-5z"></path>
+                                        </svg>
+                                        <span class=""></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group Departure-Arrival resp-width">
+                    <span class="form-label arrival">Arrival</span>
+                    <div class="select-area select-arrival">
+                        <div class="">
+                            <input aria-invalid="false" autocomplete="off" id=":r4:" type="text" class="css-1uvydh2"
+                                aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false"
+                                role="combobox" value="">
+                        </div>
+                        <div class="select-area-btn select-btn">
+                            <button class="css-uge3vf" tabindex="-1" type="button" aria-label="Open" title="Open">
+                                <svg class="css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                    data-testid="ArrowDropDownIcon">
+                                    <path d="M7 10l5 5 5-5z"></path>
+                                </svg>
+                                <span class=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="booking">
+
+                <div class="form-group resp-date return-date count">
+                    <span class="form-label">Departing</span>
+                    <input class="form-control form__spacing" type="date" required="">
+                </div>
+
+                <div id="tag" class="form-group return-date count resp-date resp-return hidden">
+                    <span class="form-label">Returning</span>
+                    <input class="form-control" type="date" required="">
+                </div>
+
+                <div class="form-group return-date count">
+                    <span class="form-label">Adults (18+)</span>
+                    <select class="form-control adult-count">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+
+                <div class="form-group return-date count Children">
+                    <span class="form-label">Children (0-17)</span>
+                    <select class="form-control child-count">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+
+                <div class="form-group return-date travel">
+                    <span class="form-label">Travel class</span>
+                    <select class="form-control select-class">
+                        <option>Economy </option>
+                        <option>Business </option>
+                        <option>First </option>
+                    </select>
+                    <span class="select-arrow"></span>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div class="form-btn show-flight">
+                    <a href="#">
+                        <button class="submit-btn">Show Flights</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-destination">
+        <div class="distination">
+            <h1>DESTINATIONS</h1>
+            <div class="destination-line"></div>
+        </div>
+        <div class="destination-img">
+            <div><img src="img3.png" alt=""></div>
+            <div><img src="img3.png" alt=""></div>
+            <div><img src="img3.png" alt=""></div>
+            <div><img src="img3.png" alt=""></div>
+        </div>
+    </div>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h3>EXPLORE THE WORLD</h3>
+            <div class="line"></div>
+            <p>BookTrips is used by travellers who go on vacation, business trips, family trips, and for a variety of
+                other purposes. As a result, we make a lot of effort to make the process of arranging and We will make
+                booking your flights and other travel arrangements as easy as we can.</p>
+        </div>
+    </section>
+
+
+    <div class="tours-sites">
+        <section class="tours">
+            <div class="row1">
+                <div class="col content-col">
+                    <h1>UPCOMING TOURS &amp; DESTINATION</h1>
+                    <div class="line"></div>
+                    <p>People that travel for adventure, employment, family, and a variety of other reasons utilise
+                        BookTrips. Because of this, we put out great effort to make the process of arranging and
+                        purchasing your flights and travel arrangements as simple as we can.
+                    </p>
+                </div>
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="img5.png" alt="">
+                        <img src="img6.png" alt="">
+                        <img src="img6.png" alt="">
+                        <img src="img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <div class="title">
+            <h1>Airlines</h1>
+            <div class="line1 "></div>
+        </div>
+        <div>
+            <div style="animation: slideRightToLeft 14s linear infinite; --pause-on-click: paused;" class="slide-img">
+                
+                <div class="marquee">
+                    <div class="image_wrapper"><img style="width: 200px;" src="air sialpng.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="airblue.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="pakistan.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="air-indus-logo.png" alt=""></div>
+                    <div><img style="width: 200px;" src="flyjinnah.jpg" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="serene.png" alt=""></div>
+                </div>
+                <div class="marquee" aria-hidden="true">
+                    <div class="image_wrapper"><img style="width: 200px;" src="air sialpng.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="airblue.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="pakistan.png" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="air-indus-logo.png" alt=""></div>
+                    <div><img style="width: 200px;" src="flyjinnah.jpg" alt=""></div>
+                    <div class="image_wrapper"><img style="width: 200px;" src="serene.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="main-aboutus">
+        <div class="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to BookTrips. We deliver the finest travel-related services in the Pakistan and help you search
+                and compare the best flights from famous airlines, agents, and travel providers. With our innovative
+                technology, we make finding the airlines ticket prices quick and easy. We're offering you comfort,
+                reliability, and value-for-money saving services. Having served millions of valued customers, we're
+                still dedicated to achieving the milestone of customer satisfaction. If you already know where and when
+                you want to travel or are seeking airline online ticket booking in Pakistan , is 24/7 available to
+                search for and plan the best trip. Breaking down the barrier.</p>
+        </div>
+        <div class="about-us">
+            <h2>Our Vision</h2>
+            <p>We’re on a mission to help people discover the real value of travel — to inspire, to give more reasons,
+                to make it easy — for you to go. some of the most well-loved products for travelers all around the
+                world. Today, BookTrips is used by people — who travel for adventure, for work, for family and for many
+                other reasons. That’s why we work tirelessly to make your experience of planning & booking flights, and
+                trips as seamless as possible. BookTrips is a website or a company. BookTrips is an idea and belief that
+                everyone has an innate desire and yearning to travel — to experience, to live and to grow. ” —
+                BookTrips.</p>
+        </div>
+        <div class="about-us">
+            <h2>Our Mission</h2>
+            <p>Our ultimate goal is to take the real pain and give value to every customer who is seeking travel
+                services at their doorstep. Being an Online Travel Agency Pakistan, we are unique among other market
+                competitors by providing the best rates for flights as per your inquiry.</p>
+        </div>
+        <div class="line3"></div>
+    </div>
+    <section class="footer">
+        <div class="social">
+            <a href=" # "><i class="fa-brands fa-square-facebook"></i></a>
+            <a href=" # "><i class="fab fa-instagram-square"></i></a>
+            <a href=" #"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/destinations"> Destination</a></li>
+            <li><a href="/airlines"> Airlines</a></li>
+            <li><a href="/fares"> Fares</a></li>
+            <li><a href="/contact"> Contact Us</a></li>
+        </ul>
+        <p class="copyright">Travelling Agent</p>
+        <div class="line-1"></div>
+    </section>
+
+    <script src="resp.js"></script>
+
+</body>
+
+</html>

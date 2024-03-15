@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    
+    height: 50%;
+    background-color: #3498db; /* Left side color */
+  }
+  
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e74c3c; /* Right side color */
+  }
+  
+  .container {
+    text-align: center;
+    color: white; /* Set text color to white or a contrasting color */
+  }
+  
